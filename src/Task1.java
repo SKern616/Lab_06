@@ -14,12 +14,12 @@ import java.util.Scanner;
                 degreesC = scan.nextDouble();
                 validInput = true;
             } else {
-                System.out.println("ERROR - You did not enter a valid input!");
+                System.out.println("ERROR - You did not enter a valid input! Please try again.");
                 scan.nextLine();
             }
         } while (!validInput);
         degreesF = ((double) degreesC * 9/5) + 32;
-        System.out.printf("Degrees C: %8.2f", degreesC);
-        System.out.printf("\nDegrees F: %8.2f", degreesF);
+        System.out.printf("%10s %8.2f", "DegreesC: ", degreesC);
+        System.out.printf("\n%10s %8.2f", "DegreesF: ", degreesF);
     }
 }

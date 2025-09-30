@@ -57,11 +57,11 @@ public class Task2 {
                     validInput = true;
                     scan.nextLine();
                 } else {
-                    System.out.println("ERROR - You did not enter a valid price per gallon!");
+                    System.out.println("ERROR - You did not enter a valid price per gallon! Please try again.");
                     scan.nextLine();
                 }
             } else {
-                System.out.println("ERROR - You did not enter a valid price per gallon!");
+                System.out.println("ERROR - You did not enter a valid price per gallon! Please try again.");
                 scan.nextLine();
             }
         } while (!validInput);
@@ -69,8 +69,8 @@ public class Task2 {
         milesCost = (100/fuelEff) * pricePerGallon;
         distanceLeft = fuelEff * numOfGallons;
 
-        System.out.printf("%10s %10.2f","Cost per 100 miles in $: ", milesCost);
-        System.out.printf("\n%10s %10.2f","Distance left in miles: ", distanceLeft);
+        System.out.printf("%-25s %10.2f","Cost per 100 miles in $: ", milesCost);
+        System.out.printf("\n%-25s %10.2f","Distance left in miles: ", distanceLeft);
 
 
     }
